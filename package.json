@@ -1,0 +1,25 @@
+{
+  "name": "empire",
+  "version": "1.0.0",
+  "description": "Empire Tours",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/styles.scss css/styles.css -w",
+    "server": "live-server",
+    "working": "npm-run-all --parallel server watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschevalier/Empire.git"
+  },
+  "author": "David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dschevalier/Empire/issues"
+  },
+  "homepage": "https://github.com/dschevalier/Empire#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  }
+}
