@@ -1,0 +1,122 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+    &-side {
+        height: 52rem;
+        font-size: 2rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+        &-front {
+            background-color: $color-white;
+        }
+        &-back {
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.7));
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.7));
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, rgba($primary-color-light, 0.8), rgba($primary-color-dark, 0.7));
+            }
+        }
+    }
+    &:hover &-side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &-side-back {
+        transform: rotateY(0);
+    }
+    &-picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.5), rgba($color-secondary-dark, 0.8)), url(../images/bespin-card.jpg);
+        }
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.5), rgba($color-tertiary-dark, 0.8)),
+            url(../images/endor-card.jpg);
+        }
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($primary-color-light, 0.5), rgba($primary-color-dark, 0.8)),
+            url(../images/hoth-card.jpg);
+        }
+    }
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 13rem;
+        right: 1rem;
+        width: 75%;
+        z-index: 1;
+    }
+    &-heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .7), rgba($color-secondary-dark, .7));
+        }
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8));
+        }
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($primary-color-light, .8), rgba($primary-color-dark, .8));
+        }
+    }
+    &-details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: .1rem solid $color-grey-2;
+                }
+            }
+        }
+    }
+    &-calltoaction {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+    &-price-box {
+        text-align: center;
+        margin-bottom: 6rem;
+        color: $color-white;
+    }
+    &-price-only {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+    &-price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}
