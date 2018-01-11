@@ -6,11 +6,11 @@
     &-side {
         height: 52rem;
         font-size: 2rem;
-        transition: all .8s ease;
+        transition: all 1s ease;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 99%;
         backface-visibility: hidden;
         border-radius: 5px;
         overflow: hidden;
@@ -48,12 +48,10 @@
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.5), rgba($color-secondary-dark, 0.8)), url(../images/bespin-card.jpg);
         }
         &-2 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.5), rgba($color-tertiary-dark, 0.8)),
-            url(../images/endor-card.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.5), rgba($color-tertiary-dark, 0.8)), url(../images/endor-card.jpg);
         }
         &-3 {
-            background-image: linear-gradient(to right bottom, rgba($primary-color-light, 0.5), rgba($primary-color-dark, 0.8)),
-            url(../images/hoth-card.jpg);
+            background-image: linear-gradient(to right bottom, rgba($primary-color-light, 0.5), rgba($primary-color-dark, 0.8)), url(../images/hoth-card.jpg);
         }
     }
     &-heading {

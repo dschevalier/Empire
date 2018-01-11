@@ -9,6 +9,11 @@
         transition: all .2s;
         position: relative;
         top: 0px;
+        letter-spacing: 1px;
+    }
+
+    &:hover {
+        color: $primary-color-dark;
     }
     &:active {
         box-shadow: 0 5px 1rem rgba($color-black, .3);
@@ -31,18 +36,19 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $primary-color-dark;
+        color: $primary-color-light;
+        font-weight: 700;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $primary-color-dark;
-        padding: 2px 3px;
+        border-bottom: 1px solid $primary-color-light;
+        padding: 5px 3px;
         position: relative;
         top: 0px;
         transition: all .2s;
     }
 
     &:hover {
-        background-color: $primary-color-dark;
+        background-color: $primary-color-light;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15)
     }
