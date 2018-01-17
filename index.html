@@ -9,8 +9,8 @@
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- TITLE -->
     <title>Empire Tours</title>
@@ -21,42 +21,52 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="header-logo-box">
             <i class="fa fa-empire"></i>
         </div>
-
+        <!-- <ul class="main-nav js-main-nav">
+                <li><a href="#about">About Empire</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#request">Request Info</a></li>
+            </ul>
+            <a class="mobile-nav-icon js-nav-icon">
+                <i class="fa fa-bars"></i>
+            </a>                   -->
         <div class="header-text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary-main">Empire Tours</span>
                 <span class="heading-primary-sub">Your Adventure Awaits</span>
             </h1>
-            <a href="#" class="btn btn-white btn-animated">Discover Our Tours</a>
+            <a href="#tours" class="btn btn-white btn-animated">Discover Our Tours</a>
         </div>
     </header>
 
     <main>
 
         <!-- ABOUT SECTION -->
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">Exciting tours for brave individuals</h2>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Proudly present butt to human give attitude</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Discover The Empire Tours Diffrence</h3>
                     <p class="paragraph">
-                        Scream for no reason at 4 am knock over christmas tree. Stare at wall turn and meow stare at wall some more meow again continue
-                        staring gnaw the corn cob and cat ass trophy but eat and than sleep on your face and scratch at the
-                        door then walk away. Meowwww jump on human and sleep on her all night long be long in the bed, purr
-                        in the morning and then give a bite to every human around for not waking up request food,
+                        Hyperspace travel is the best way to learn about the Galaxy, and our guided tours make it easy to get to the heart of any
+                        destination. As the galaxy’s largest and only authorized tour company, we draw on many years of experience
+                        and a rich network of historians, spies, and experts to create one-of-a-kind journeys for curious
+                        space travelers.
+
                     </p>
                     <p class="paragraph">
-                        Sit in window and stare oooh, a bird, yum that box? i can fit in that box. You have cat to be kitten me right meow. Cat ass
-                        trophy destroy couch. Eat grass, throw it back up shake treat bag ignore the squirrels, you'll never
-                        catch them anyway.
+                        Every traveler wants to see the galaxy in his or her own way, so flexibility and personalization are factors we don’t consider
+                        when creating itineraries. Each trip offers the perfect balance of carefully planned activities and
+                        closely monitored free time to explore your interests, so you’ll return home with memories that last
+                        a lifetime.
                     </p>
-                    <a href="#" class="btn-text">Learn more &rarr;</a>
+                    <a href="#request" class="btn-text">Learn more &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
                     <div class="collage">
@@ -69,14 +79,14 @@
         </section>
 
         <!-- FEATURES SECTION -->
-        <section class="section-features">
+        <section class="section-features" id="highlights">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="fa fa-star"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Explore the Galaxy</h3>
                         <p>
-                            Step on your keyboard while you're gaming and then turn in a circle scratch at the door.
+                            Discover many new worlds by boarding an Imperial Star Destroyer to explore the galaxy in style.
                         </p>
                     </div>
                 </div>
@@ -85,7 +95,8 @@
                         <i class="fa fa-user-o"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Meet Locals</h3>
                         <p>
-                            Cats go for world domination, stare at ceiling light sit in window and stare oooh, a bird, yum.
+                            There’s no better way of getting to know a place than
+                            <s>interrogating</s> talking to the locals.
                         </p>
                     </div>
                 </div>
@@ -94,7 +105,7 @@
                         <i class="fa fa-rocket"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Find Adventure</h3>
                         <p>
-                            Stare at wall turn and meow stare at wall some more meow again continue staring.
+                            Go off the beaten hyperspace lane to find the adventure and journey of a lifetime.
                         </p>
                     </div>
                 </div>
@@ -102,14 +113,15 @@
                     <div class="feature-box">
                         <i class="fa fa-moon-o"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Guided Tours</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                        <p>Protocol Droids are available for guided access to all of the galaxy’s iconic attractions.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TOURS SECTION -->
-        <section class="section-tours">
+        <section class="section-tours" id="tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -206,13 +218,13 @@
             </div>
 
             <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn-white">Discover all tours</a>
+                <a href="#tours" class="btn btn-white">Discover all tours</a>
             </div>
         </section>
 
 
         <!-- REQUEST INFO SECTION -->
-        <section class="section-request">
+        <section class="section-request" id="request">
             <div class="row">
                 <div class="request">
                     <div class="request-form">
@@ -231,11 +243,8 @@
                                 <input type="email" class="form-input" placeholder="Email Address" id="email" required>
                                 <label for="email" class="form-label">Email Address</label>
                             </div>
-
-
                             <div class="form-group">
                                 <button class="btn btn-white">Request Info</button>
-
                             </div>
                         </form>
                     </div>
@@ -256,16 +265,16 @@
                 <div class="footer-navigation">
                     <ul class="footer-list">
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Info</a>
+                            <a href="#about" class="footer-link">About Empire</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Highlights</a>
+                            <a href="#highlights" class="footer-link">Highlights</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Destinations</a>
+                            <a href="#tours" class="footer-link">Tours</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Request Info</a>
+                            <a href="#request" class="footer-link">Request Info</a>
                         </li>
                     </ul>
                     <p class="footer-copyright">
@@ -276,6 +285,10 @@
                 </div>
             </div>
     </footer>
+
+    <!--SCRIPTS-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script> -->
 
 </body>
 

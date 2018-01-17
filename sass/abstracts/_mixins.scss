@@ -5,3 +5,30 @@
         clear: both;
     }
 }
+
+// 
+// 1em = 16px (browser base font size)
+// 
+// 22.5em = 360px
+// 37.5em = 600px
+// 48em = 768px
+// 56.25em = 900px
+// 75em = 1200px
+// 80em = 1280px
+// 112.5em = 1800px
+// 
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==small {
+        @media (min-width: 22.5em) {@content};
+    }
+    @if $breakpoint==medium {
+        @media (min-width: 48em) {@content};
+    }
+    @if $breakpoint==large {
+        @media (min-width: 75em) {@content};
+    }
+    @if $breakpoint==extralarge {
+        @media (min-width: 112.5em) {@content};
+    }
+}
