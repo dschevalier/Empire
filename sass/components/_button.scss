@@ -17,9 +17,7 @@
         @include respond(phone) {
             padding: 1rem 2rem;
         }
-        
     }
-
     &:hover {
         color: $primary-color-dark;
     }
@@ -54,14 +52,12 @@
         top: 0px;
         transition: all .2s;
     }
-
     &:hover {
         background-color: $primary-color-light;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15)
     }
-
-    &:active{
+    &:active {
         box-shadow: 0 5px 1rem rgba($color-black, .3);
         top: 3px;
         position: relative;
