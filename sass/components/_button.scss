@@ -64,36 +64,3 @@
         position: relative;
     }
 }
-
-
-
-
-
-// .btn {
-//     &:link,
-//     &:visited {
-//         text-transform: uppercase;
-//         text-decoration: none;
-//         padding: 1.5rem 3.5rem;
-//         display: inline-block;
-//         border-radius: 5px;
-//         transition: all .2s;
-//     }
-//     &:hover {
-//         transform: translateY(-4px);
-//         box-shadow: 0 1rem 2rem rgba($color-black, .3);
-//     }
-//     &:active {
-//         transform: translateY(-1px);
-//         box-shadow: 0 5px 1rem rgba($color-black, .3);
-//     }
-//     &-white {
-//         background-color: $color-white;
-//         color: $color-grey-1;
-//         font-size: 1.6rem;
-//     }
-//     &-animated {
-//         animation: moveInBottom 1s ease-in-out;
-//         animation-fill-mode: backwards;
-//     }
-// }

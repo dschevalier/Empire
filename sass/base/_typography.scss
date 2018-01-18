@@ -14,8 +14,18 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 700;
-        letter-spacing: 2rem;
+        letter-spacing: 1rem;
         animation: moveInLeft 1s ease-in-out;
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+            
+        }
+        @include respond(tab-land) {
+            
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
     }
     &-sub {
         display: block;
@@ -23,6 +33,9 @@ body {
         font-weight: 700;
         letter-spacing: 1rem;
         animation: moveInRight 1s ease-in-out;
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -35,6 +48,14 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 5px;
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
 }
 
 .heading-tertiary {

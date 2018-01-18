@@ -8,17 +8,33 @@
         z-index: 10;
         transition: all .3s;
         outline-offset: 2rem;
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3333333%;
+        }
+        
         &-1 {
             left: 10%;
             top: 0;
+            @include respond(tab-port) {
+                left: 2%;
+            }
         }
         &-2 {
             left: 60%;
             top: 0;
+            @include respond(tab-port) {
+                left: 30%;
+            }
         }
         &-3 {
             right: 25%;
             top: 8rem;
+            @include respond(tab-port) {
+                right: 35%;
+                top: 4rem;
+            }
         }
         &:hover {
             transform: scale(1.05) translateY(-.5rem);

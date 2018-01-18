@@ -13,22 +13,29 @@
 // 37.5em = 600px
 // 48em = 768px
 // 56.25em = 900px
+// 64em = 1024px
 // 75em = 1200px
 // 80em = 1280px
 // 112.5em = 1800px
 // 
+// 0 - 600px: phone
+// 600 - 900px - tablet portrait 
+// 900 - 1200px - tablet landscape 
+// 1200 - 1800px normal styles 
+// 1800+: big desktop
+// 
 
 @mixin respond($breakpoint) {
-    @if $breakpoint==small {
-        @media (min-width: 22.5em) {@content};
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {@content};
     }
-    @if $breakpoint==medium {
-        @media (min-width: 48em) {@content};
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {@content};
     }
-    @if $breakpoint==large {
-        @media (min-width: 75em) {@content};
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {@content};
     }
-    @if $breakpoint==extralarge {
+    @if $breakpoint==big-desktop {
         @media (min-width: 112.5em) {@content};
     }
 }
