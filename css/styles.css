@@ -148,6 +148,9 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2rem; } }
 
 .btn:hover {
   color: #5643ff; }
