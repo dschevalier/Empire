@@ -1,26 +1,38 @@
-// 
+// VENDORS IMPORTS
 @import "vendors/fontawesome/brands.scss";
 @import "vendors/fontawesome/solid.scss";
 @import "vendors/fontawesome/regular.scss";
 @import "vendors/fontawesome/fontawesome.scss";
-//
-@import "abstracts/mixins";
-@import "abstracts/variables";
-// 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
+
+// BASE IMPORTS
+@import "base/variables";
+@import "base/responsive";
 @import "base/utilities";
-// 
+@import "base/typography";
+@import "base/animations";
+@import "base/main";
+
+// COMPONENT IMPORTS
 @import "components/buttons";
 @import "components/cards";
 @import "components/collage";
 @import "components/feature-box";
+@import "components/footer";
 @import "components/form";
-// 
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-// 
-@import "pages/home";
+@import "components/grid";
+@import "components/header";
+@import "components/navigation";
+
+// PAGE SPECIFIC IMPORTS
+@import "page-specific/home-page";
+
+
+
+
+
+
+
+
+
+
+

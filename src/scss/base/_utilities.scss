@@ -1,3 +1,23 @@
+// ------------------------------------
+// MISC. REUSABLE MIXINS
+// ------------------------------------
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// ------------------------------------
+// MISC. REUSABLE FUNCTIONS
+// ------------------------------------
+
+
+
+// ------------------------------------
+// MISC. REUSABLE UTILITIES
+// ------------------------------------
 .u-center-text {
     text-align: center !important;
 }
@@ -8,6 +28,7 @@
 
 .u-margin-bottom-medium {
     margin-bottom: 4rem !important;
+
     @include respond(tab-port) {
         margin-bottom: 3rem !important;
     }
@@ -15,6 +36,7 @@
 
 .u-margin-bottom-big {
     margin-bottom: 8rem !important;
+
     @include respond(tab-port) {
         margin-bottom: 5rem !important;
     }
